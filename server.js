@@ -13,7 +13,7 @@ const server=http.createServer(app);
 const io=socketio(server);
 
 app.use(express.static(path.join(__dirname,'public')))
-const port=  process.env.port || 3000
+const port=  process.env.PORT || 3000
 
 
 io.on('connection',socket=>{
